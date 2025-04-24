@@ -1,0 +1,76 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 38,
+    "width":1920,
+    "margin": "0 0 0 0",
+    "spacing":0,
+
+
+    "modules-left": ["clock"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["battery", "pulseaudio"],
+
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "sort-by-number": true,
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10",
+      "focused": "",
+      "default": ""
+    },
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    },
+
+
+    "clock": {
+	"interval": 1,
+	"tooltip": false,
+	"format": "{:%H:%M:%S}",
+        "format-alt": "{:%d %b %H:%M:%S}",
+    },
+
+    "cpu": {
+        "format": "   {usage}%",
+        "on-click": "kitty -e htop",
+	"tooltip": false
+    },
+
+
+    "memory": {
+        "format": " {: >3}%",
+        "on-click": "kitty -e htop",
+	"tooltip": false
+    },
+
+
+    "battery": {
+        "format": "{icon}  {capacity: >3}%",
+        "format-icons": ["", "", "", "", ""],
+	"tooltip": false
+    },
+
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon}   {volume}%",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+        },
+    }

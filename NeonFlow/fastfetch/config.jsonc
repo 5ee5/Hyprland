@@ -1,0 +1,95 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+   "logo":{
+	"color":{"1": "cyan",
+		 "2": "cyan"
+	}
+},
+
+    "modules": [
+        {
+            "type": "os",
+            "key": "╭─ ",
+            "keyColor": "cyan",
+        },
+        {
+            "type": "host",
+            "key": "╰─ ",
+            "keyColor": "cyan",
+	},
+
+	"break",
+
+	{
+           "type": "kernel",
+           "key": "╭─ ",
+           "keyColor": "cyan",
+	},
+	{
+           "type": "initsystem",
+           "key": "├─ ",
+           "keyColor": "cyan",
+	},
+        {
+          "type": "shell",
+          "key": "├─ ",
+          "keyColor": "cyan",
+	},
+	{
+         "type": "uptime",
+         "key": "├─󰄉 ",
+         "keyColor": "cyan",
+	},
+
+	{
+        "type": "packages",
+        "key": "╰─󰏗 ",
+        "keyColor": "cyan",
+	},
+
+        "break",
+	{
+	"type": "wm",
+	"key": "╭─ ",
+	"keyColor": "cyan",
+	},
+
+	{
+	"type": "terminal",
+	"key": "╰─ ",
+	"keyColor": "cyan",
+	},
+
+	"break",
+
+        {
+        "type": "cpu",
+        "key": "╭─ ",
+        "keyColor": "cyan",
+        "showPeCoreCount": false,
+        "temp": false
+        },
+
+        {
+        "type": "gpu",
+        "key": "├─󰍹 ",
+        "driverSpecific": true,
+        "temp": true,
+        "keycolor": "cyan",
+        },
+
+	{
+	"type": "memory",
+	"key": "├─ ",
+	"keyColor": "cyan",
+	},
+
+	{
+	"type": "disk",
+	"key": "╰─ ",
+	"keyColor": "cyan",
+	}
+
+    ]
+}
