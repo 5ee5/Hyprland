@@ -40,9 +40,9 @@ git clone https://github.com/5ee5/Hyprland.git
 ```bash
 cd Hyprland
 ```
-  2. Change to the desired branch.
+  2. Change to the desired directory.
 ```bash
-git checkout <branch>
+cd <directory>
 ```
   3. Copy the config files to their respective directories (adjust paths in the config files as needed).
 ```bash
