@@ -1,0 +1,109 @@
+* {
+    color: #eceff4;
+    border: 0;
+    border-radius: 0;
+    padding: 0 0;
+    font-family:Symbols Nerd Font Mono;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-bottom:2px;
+   }
+
+window#waybar {
+    background:rgba (0, 0, 0, 0.5);
+    border-radius: 20px 20px 20px 20px; 
+}
+
+#workspaces button {
+    padding: 2px 0px;
+    border-bottom: 2px;
+    border-color: #00FF00;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top:2px;
+}
+
+#workspaces button.active {
+    border-color: #000000;
+}
+
+#clock, #battery, #network, #pulseaudio, #window{
+    padding: 0 3px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+ 
+/* -----------------------------------------------------------------------------
+ * Module styles
+ * -------------------------------------------------------------------------- */
+
+ 
+#clock {
+    color: #00FF00;
+}
+
+
+#battery {
+    color: #00FF00;
+}
+
+
+@keyframes blink {
+    to {
+        color: #4c566a;
+        background-color: #eceff4;
+    }
+}
+
+
+#cpu {
+    color:#00FF00;
+}
+
+#memory {
+    color: #00FF00;
+}
+
+#network.disabled {
+    color:#00FF00;
+}
+
+#network{
+    color:#00FF00;
+}
+
+#network.disconnected {
+    color: #bf616a;
+}
+
+#pulseaudio {
+    color: #00FF00;
+}
+
+#pulseaudio.muted {
+    color: #00FF00;
+}
+
+#temperature {
+    color: #00FF00;
+}
+
+#temperature.critical {
+    color: #00FF00;
+}
+
+#idle_inhibitor {
+   color: #00FF00;
+}
+
+
+#custom-launcher{
+        font-size: 20px;
+        background-image: url('/home/minka69btw/.config/waybar/launcher.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-style: hidden;
+}
