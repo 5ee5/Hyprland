@@ -1,7 +1,7 @@
 # Hyprland #
 
 ## Feature list ##
-- [x] Neofetch config
+- [x] Fastfetch config
 - [x] Waybar config
 - [x] Kitty config
 - [x] Wallpaper using hyprpaper
