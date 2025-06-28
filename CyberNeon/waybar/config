@@ -35,27 +35,12 @@
     "on-scroll-down": "hyprctl dispatch workspace e-1",
     },
 
-
     "clock": {
 	"interval": 1,
 	"tooltip": false,
 	"format": "{:%H:%M:%S}",
         "format-alt": "{:%d %b %H:%M:%S}",
     },
-
-    "cpu": {
-        "format": "   {usage}%",
-        "on-click": "kitty -e htop",
-	"tooltip": false
-    },
-
-
-    "memory": {
-        "format": " {: >3}%",
-        "on-click": "kitty -e htop",
-	"tooltip": false
-    },
-
 
     "battery": {
         "format": "{icon}  {capacity: >3}%",
@@ -66,7 +51,7 @@
 
     "pulseaudio": {
         "scroll-step": 5,
-        "format": "{icon}   {volume}%",
+        "format": "{icon}  {volume}%",
         "format-icons": {
             "default": ["", "", ""]
         },
